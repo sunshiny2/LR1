@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<style>
+body {
+    background: -webkit-linear-gradient(left, #F0FFF0, #C9DCB9); 
+    background: -o-linear-gradient(right,#F0FFF0, #C9DCB9);
+    background: -moz-linear-gradient(right,#F0FFF0, #C9DCB9); 
+    background: linear-gradient(to right, #F0FFF0, #C9DCB9); 
+    background-color: #C9DCB9; 
+}
+  </style>
+     <title>Задание №7</title>
+	<h2> 
+	  <font color="666699"><center> Задание №7 </center></font></h2>
+	<meta charset="utf-8">
+  <script type="text/javascript">
+    function sorting(){
+      lessons = new Array("математика", "физика", "химия", "информатика", "обществознание", "история", "литература", "искусствознание");
+      document.write("Все дисциплины: "+lessons);
+      tech = new Array();
+      hum = new Array();
+      tech  = lessons.slice(0,4);
+      hum = lessons.slice(4,8);
+      for(var i = 0; i < tech.length; i++)
+      document.write("<tr><td>"+tech[i]+"</td><td>"+hum[i]+"</td></tr>"); 
+    }
+  </script>
+<div class="vl"></div>
+</head>
+<body>
+        <h1>Школьные предметы</h1>
+  		<table>
+        <tr>
+          <th>Раздел точных наук</th>
+<td style="border-left: 1px solid red; padding: 10px;"></td>
+          <th>Раздел гуманитарных наук</th>
+        </tr>
+     <script type="text/javascript">
+            sorting();
+     </script>
+     </table>
+<td style="border-left: 1px solid red; padding: 10px;"></td>
+     <div>
+<a  href="Lab6.html"><button>Задание №6</button></a>
+     </div>
+</body>
+</html>
+
